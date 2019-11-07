@@ -1,0 +1,6 @@
+<div class="bar"
+  [ngStyle]="{ 'background-color' : checked ? barCheckedBgColor || sliderSettings.barCheckedBgColor : barUncheckedBgColor || sliderSettings.barUncheckedBgColor }"
+  [ngClass]="{'slider-disable':  disabled }">
+  <span class="slider" (click)="changeCheckStatus()" [ngClass]="{'toggle': checked }"
+    [ngStyle]="{ 'background-color':  checked ? sliderCheckedColor || sliderSettings.sliderCheckedColor : sliderUncheckedColor || sliderSettings.sliderUncheckedColor }"></span>
+</div>

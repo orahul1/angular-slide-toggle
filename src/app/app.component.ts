@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-slide-toggle';
+  settings = {
+    barCheckedBgColor : "#beebe9",
+    sliderCheckedColor : "#3fc5f0",
+    barUncheckedBgColor : "#ded5d5",
+    sliderUncheckedColor : "#bdbdbd",
+    barDisabledBgColor: "red"
+  }
 }

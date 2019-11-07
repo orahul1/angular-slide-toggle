@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ang-slide-toggle": [
+        "dist/ang-slide-toggle"
+      ],
+      "ang-slide-toggle/*": [
+        "dist/ang-slide-toggle/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ang-slide-toggle": {
+      "projectType": "library",
+      "root": "projects/ang-slide-toggle",
+      "sourceRoot": "projects/ang-slide-toggle/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ang-slide-toggle/tsconfig.lib.json",
+            "project": "projects/ang-slide-toggle/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ang-slide-toggle/src/test.ts",
+            "tsConfig": "projects/ang-slide-toggle/tsconfig.spec.json",
+            "karmaConfig": "projects/ang-slide-toggle/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ang-slide-toggle/tsconfig.lib.json",
+              "projects/ang-slide-toggle/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "angular-slide-toggle"
 }
