@@ -1,3 +1,7 @@
 .container{
+  display: flex;
   margin: 250px;
+  .toggle{
+    margin: 0px 20px;
+  }
 }

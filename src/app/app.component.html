@@ -1,15 +1,26 @@
-
-
 <div class="container">
-    <ang-slide-toggle
-    [checked]="true"
-    [disabled]="false"
-    [sliderSettings]="settings">
+  <div class="toggle">
+    <ang-slide-toggle [checked]="true" [disabled]="false" [sliderSettings]="settings">
     </ang-slide-toggle>
- <br>
-    <ang-slide-toggle
-    [checked]="false"
-    [disabled]="true"
-    [sliderSettings]="settings">
+  </div>
+
+  <div class="toggle">
+    <ang-slide-toggle [checked]="true"  [sliderSettings]="settings2">
     </ang-slide-toggle>
+  </div>
+
+  <div class="toggle">
+    <ang-slide-toggle [checked]="true"  [sliderSettings]="settings3">
+    </ang-slide-toggle>
+  </div>
+
+  <div class="toggle">
+    <ang-slide-toggle [checked]="false" [sliderSettings]="settings4">
+    </ang-slide-toggle>
+  </div>
+
+  <div class="toggle">
+      <ang-slide-toggle [checked]="false" [disabled]="true" [sliderSettings]="settings4">
+      </ang-slide-toggle>
+    </div>
 </div>
