@@ -15,10 +15,10 @@ export class AngSlideToggleComponent implements OnInit {
   @Input() checked: boolean = false;
   @Input() disabled: boolean;
   @Input() sliderSettings = {
-    barCheckedBgColor: '',
-    sliderCheckedColor: '',
-    barUncheckedBgColor: '',
-    sliderUncheckedColor: ''
+    barCheckedBgColor: '#beebe9',
+    sliderCheckedColor: '#3fc5f0',
+    barUncheckedBgColor: '#ded5d5',
+    sliderUncheckedColor: '#bdbdbd'
   }
 
   constructor() { }

@@ -1,27 +1,70 @@
-# AngularSlideToggle
+# Angular 8+ slider toggle
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+![alt text](https://i.ibb.co/QpgC7jd/toggles.jpg)
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Install the package :
+    `npm install ang-slider-toggle --save`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Usage
 
-## Running unit tests
+Import `AngSlideToggleModule` into `NgModule` in `app.module.ts`. `CommonModule` is also required.
+```js
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+import { AngSlideToggleModule } from 'ang-slider-toggle';
+import { CommonModule } from '@angular/common';
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+@NgModule({
+  // ...
+  imports: [
+    AngSlideToggleModule,
+    CommonModule
+  ]
+  // ...
+})
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Add the following component tag in you template
+
+```html
+<ang-slider-toggle [sliderSettings]='settings' [checked]="true" [disabled]="false"></ang-slider-toggle>
+```
+
+settings
+
+```js
+ settings = {
+    barCheckedBgColor: '#beebe9',
+    sliderCheckedColor: '#3fc5f0',
+    barUncheckedBgColor: '#ded5d5',
+    sliderUncheckedColor: '#bdbdbd'
+  }
+```
+or
+
+```html
+<ang-slider-toggle 
+barCheckedBgColor="#beebe9" 
+sliderCheckedColor="#3fc5f0"
+barUncheckedBgColor="#ded5d5",
+sliderUncheckedColor="#bdbdbd"
+[checked]="true" 
+[disabled]="false">
+</ang-slider-toggle>
+```
+
+## Run locally
+- Clone the repository or downlod the .zip,.tar files.
+- Run `npm install`
+- Run `ng serve` for a dev server
+- Navigate to `http://localhost:4200/`
+
+## License
+free to use on any purpose.
