@@ -60,6 +60,9 @@ sliderUncheckedColor="#bdbdbd"
 </ang-slider-toggle>
 ```
 
+## Todos
+click animation on slider
+
 ## Run locally
 - Clone the repository or downlod the .zip,.tar files.
 - Run `npm install`
