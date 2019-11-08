@@ -2,6 +2,10 @@
 
 ![alt text](https://i.ibb.co/QpgC7jd/toggles.jpg)
 
+##DEMO
+
+[npm](https://stackblitz.com/github/orahul1/angular-slide-toggle)
+
 ## Getting Started
 
 
